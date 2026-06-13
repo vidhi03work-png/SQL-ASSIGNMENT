@@ -1,0 +1,26 @@
+MySQL vs. PostgreSQL: Key Differences
+1-Architecture
+
+* MySQL: It is a relational database management system (RDBMS).
+* Postgres: It is an object-relational database management system (ORDBMS).
+
+2-Speed
+
+* MySQL: It is optimized for tables having more records but simpler queries.
+* Postgres: It is optimized for complex queries.
+
+3-Performance
+
+* MySQL: It is better suited for smaller applications with simple queries.
+* Postgres: It is better suited for complex, high-traffic applications that require advanced features.
+
+4-Data Types
+
+* MySQL: All basic data types are supported.
+* Postgres: Along with basic data types, custom data types can be created for complex data requirements.
+
+5-Popular Companies Using It
+
+* MySQL: Uber uses MySQL for its high scalability and fast read speeds.
+* Postgres: Apple uses PostgreSQL for managing complex infrastructure data.
+
