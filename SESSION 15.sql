@@ -1,0 +1,23 @@
+
+#1
+SELECT now() AS CURRENTDATE;
+
+#2
+SELECT DATE(ORDER_DATE)AS DATE,
+       year(ORDER_DATE)AS YEAR,
+       MONTH(ORDER_DATE)AS MONTH,
+       day(ORDER_DATE)AS DAY
+       FROM ORDERS;
+       
+#3
+SELECT delivery_id,DELIVERY_DATE,
+ date_sub(DELIVERY_DATE, INTERVAL 2 DAY)AS expected_pickup_date  FROM deliveries;
+ 
+
+#4
+SELECT USER_ID,START_DATE, END_DATE, datediff(END_DATE, START_DATE)AS DIFF_DAYS FROM subscriptions; 
+
+
+#5
+SELECT USER_ID,LAST_LOGIN_DATE FROM applogins
+WHERE datediff(NOW(),LAST_LOGIN_DATE)>30;
